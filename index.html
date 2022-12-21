@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Team</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start heading  -->
+    <header>
+        <section class="d-flex align-items-center container-fluid header-section bg-dark">
+           <div class="text-center">
+                <h1 class="title">
+                    Purchase Your Favorite Player
+                </h1>
+
+                <p class=" text-light w-75 m-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </section>
+       
+    </header>
+    <!-- end heading  -->
+
+    <!-- star main -->
+    <main>
+        <!-- player list card -->
+        <section class="mt-5">
+            <div class="container text-center">
+                <div class="row g-2">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/messi.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="messi" class="card-title ">Lionel Messi</h4>
+                              <button id="select-messi" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/neymar.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="neymar"  class="card-title ">Neymar Jr</h4>
+                              <button id="select-neymar" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/mbappe.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="mbappe" class="card-title ">Kylian Mbappé</h4>
+                              <button id="select-mbappe" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- selected player card -->
+                    <div class="col-lg-3">
+                        <div class="selected-player bg-dark">                                
+                            <div class="card-body  text-light">
+                                <h4>Selected Player</h4>
+                                <hr>                               
+                                <ol id="selecteAllPlayer"></ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/ramos.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="ramos" class="card-title ">Sergio Ramos</h4>
+                              <button id="select-ramos" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/Renato Sanches.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="renato" class="card-title ">Renato Sanches</h4>
+                              <button id="select-renato" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/Vítor Machado.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="machado" class="card-title ">Vítor Machado</h4>
+                              <button id="select-machado" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- player budget card -->
+                    <div class="col-lg-3">
+
+                        <!-- single player calculation -->
+                        <div class="player-budget bg-dark text-light">
+                            <h4>Total Cost</h4>
+                            <hr> 
+                            <!-- per player -->
+                            <div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-5 col-form-label">Per Player</label>
+                                    <div class="col-sm-7">
+                                      <input  type="text" class="form-control" id="inputPassword per-player-field">
+                                    </div>
+                                </div>
+                                <button id="players-total" class="mt-2 py-1 px-4 text-light bg-info">Calculate</button>
+                                <!-- player expenses -->
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-7 col-form-label">Player Expenses </label>
+                                    <div class="col-sm-5 pt-2">
+                                      <p>$ <span>00</span></p>
+                                    </div>
+                                </div>
+                                <!-- manager  -->
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-5 col-form-label">Manager</label>
+                                    <div class="col-sm-7">
+                                      <input type="text" class="form-control" id="inputPassword">
+                                    </div>
+                                </div>
+                                <!-- coach -->
+                                <div class="form-group row mt-2">
+                                    <label for="inputPassword" class="col-sm-4 col-form-label">Coach</label>
+                                    <div class="col-sm-8">
+                                      <input type="text" class="form-control" id="inputPassword">
+                                    </div>
+                                </div>
+                                <button class="mt-2 py-1 px-4 text-light bg-info">Calculate</button>
+                                <!-- total cost -->
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-5 col-form-label">Total Cost</label>
+                                    <div class="col-sm-7 pt-2">
+                                        <p>$ <span>00</span></p>
+                                      </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/mac allister.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="allister" class="card-title ">Mac Allister</h4>
+                              <button id="select-allister" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/emiliano.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="emiliano" class="card-title ">Emiliano Martinez</h4>
+                              <button id="select-emiliano" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/paulo-dybala.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-dark text-light">
+                              <h4 id="dybala" class="card-title ">Paulo Dybala</h4>
+                              <button id="select-dybala" type="button" class="btn btn-primary select-btn">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/calculate.js"></script>
+</body>
+</html>
