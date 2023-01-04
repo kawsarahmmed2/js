@@ -64,7 +64,7 @@
                             <div class="card-body  text-light">
                                 <h4>Selected Player</h4>
                                 <hr>                               
-                                <ol id="selecteAllPlayer"></ol>
+                                <ol id="selectAllPlayer"></ol>
                             </div>
                         </div>
                     </div>
@@ -107,37 +107,37 @@
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-5 col-form-label">Per Player</label>
                                     <div class="col-sm-7">
-                                      <input  type="text" class="form-control" id="inputPassword per-player-field">
+                                      <input type="text" class="form-control" id="per-player-field">
                                     </div>
                                 </div>
-                                <button id="players-total" class="mt-2 py-1 px-4 text-light bg-info">Calculate</button>
+                                <button id="players-calculate" class="mt-2 py-1 px-4 text-light bg-info">Calculate</button>
                                 <!-- player expenses -->
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-7 col-form-label">Player Expenses </label>
                                     <div class="col-sm-5 pt-2">
-                                      <p>$ <span>00</span></p>
+                                      <p>$ <span id="players-total">00</span></p>
                                     </div>
                                 </div>
                                 <!-- manager  -->
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-5 col-form-label">Manager</label>
                                     <div class="col-sm-7">
-                                      <input type="text" class="form-control" id="inputPassword">
+                                      <input type="text" class="form-control" id="manager-field">
                                     </div>
                                 </div>
                                 <!-- coach -->
                                 <div class="form-group row mt-2">
                                     <label for="inputPassword" class="col-sm-4 col-form-label">Coach</label>
                                     <div class="col-sm-8">
-                                      <input type="text" class="form-control" id="inputPassword">
+                                      <input type="text" class="form-control" id="coach-field">
                                     </div>
                                 </div>
-                                <button class="mt-2 py-1 px-4 text-light bg-info">Calculate</button>
+                                <button id="total-cost-button" class="mt-2 py-1 px-4 text-light bg-info">Calculate</button>
                                 <!-- total cost -->
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-5 col-form-label">Total Cost</label>
                                     <div class="col-sm-7 pt-2">
-                                        <p>$ <span>00</span></p>
+                                        <p>$ <span id="total-cost">00</span></p>
                                       </div>
                                 </div>
                             </div>                        
